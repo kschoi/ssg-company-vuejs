@@ -1,7 +1,5 @@
 # company vuejs sample
 
-## Demo
-
 ## Project setup
 
 ```
