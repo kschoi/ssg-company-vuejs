@@ -1,0 +1,35 @@
+#wrap{
+	width:100%;
+	min-height:100%;
+	background: #fff;
+	padding-top:60px;
+
+	@include respond-to('small') {
+			padding-top:80px;
+	}
+}
+.container {
+	&.bg_color {
+			background: #f9f9f9;
+
+			.content {
+					padding-bottom: 0;
+			}
+	}
+}
+.content {
+	max-width: 1280px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	@include rem(padding, 60px $MOBILE-GAP 80px);
+	&.content_main,
+	&.content_vision {
+			padding: 0;
+			max-width: none;
+	}
+
+	@include respond-to('large') {
+			padding-left: 0;
+			padding-right: 0;
+	}
+}

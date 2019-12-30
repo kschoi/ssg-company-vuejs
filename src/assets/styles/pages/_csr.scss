@@ -1,0 +1,160 @@
+@import "./csr_sinmungo";
+
+// =============================================================================
+// CSR경영
+// =============================================================================
+
+
+
+.dl{
+  color:#222;
+  padding-top:60px;
+  &:first-child{
+    padding-top:0;
+  }
+  @include respond-to('medium') {
+    @include rem(padding, 40px 0 70px);
+  }
+}
+
+.dl > dt{
+  font-weight:bold;
+  @include rem(font-size, 28px);
+  line-height:1.4;
+}
+
+.dl > dd{
+  & + dd{
+    border-top:1px solid #e0e0e0;
+    @include rem(margin-top, 48px);
+    @include rem(padding-top, 48px);
+  }
+}
+
+.dl p{
+  @include rem(margin-top, 20px);
+  @include rem(font-size, 19.2px);
+  line-height:1.4;
+  em{
+    font-weight:bold;
+    @include rem(font-size, 24px);
+  }
+}
+
+.dl img{
+  max-width:100%;
+  vertical-align:top;
+}
+
+.dl .btns{
+  @include rem(padding-top, 16px);
+
+  .btn_base{
+    padding:14px 0 13px;
+    @include respond-to('medium') {
+      @include rem(padding, 24px 0);
+    }
+  }
+}
+
+.dl_lst{
+  font-size:0;
+}
+
+.dl_lst li{
+  display:inline-block;
+  vertical-align:top;
+  @include rem(margin-top, 48px);
+
+  &.col2{
+    width:100%;
+    @include respond-to('medium') {
+      width:47%;
+      &:nth-child(odd){
+        padding-left:6%;
+      }
+    }
+
+    .thmb{
+      display:inline-block;
+      vertical-align:middle;
+      @include rem(margin-right, 35px);
+    }
+    .thmb img{
+      @include rem(width, 142px);
+    }
+    dl{
+      display:inline-block;
+      vertical-align:middle;
+      margin:0;
+    }
+  }
+
+  &.col3{
+    width:50%;
+    text-align:center;
+    @include respond-to('medium') {
+      width:33.3%;
+    }
+    .thmb img{
+      @include rem(width, 162px);
+    }  
+    
+  }
+
+  &.col4{
+    width:50%;
+    text-align:center;
+    @include respond-to('medium') {
+      width:25%;
+    }
+
+    .thmb img{
+      @include rem(width, 162px);
+    }
+  }
+}
+
+.dl_lst p{
+  @include rem(margin-top, 20px);
+  @include rem(font-size, 17.6px);
+}
+
+
+.dl_lst dl{
+  display:inline-block;
+  @include rem(margin-top, 20px);
+  vertical-align:middle;
+}
+
+.dl_lst dt{
+  font-weight:bold;
+  @include rem(font-size, 19px);
+  line-height:1.4;
+}
+
+.dl_lst dd{
+  @include rem(margin-top, 9px);
+  @include rem(font-size, 17px);
+  line-height:1.4;
+}
+
+.diagram{
+  @include rem(margin-top, 48px);
+  
+  @include respond-to('medium') {
+    @include rem(margin, 48px 100px 0);
+  }
+
+  img.pc{
+    display:none;
+  }
+  @include respond-to('small') {
+    img.pc{
+      display:block;
+    }
+    img.m{
+      display:none
+    }
+  }
+}

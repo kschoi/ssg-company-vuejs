@@ -1,0 +1,209 @@
+// =============================================================================
+// 메인
+// =============================================================================
+.main_visual {
+    &.pc {
+        display: none;
+    }
+
+    @include respond-to('small') {
+        &.pc {
+            display: block;
+        }
+        &.m {
+            display: none;
+        }
+    }
+}
+
+.main_visual.pc {
+    position: relative;
+    z-index: -1;
+    @include rem(height, 1080px);
+    margin-top: -80px;
+    video {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @include rem(width, 1920px);
+        @include rem(height, 1080px);
+        transform: translateX(-50%);
+    }
+
+    @media (min-width: 1920px) {
+        height: 0;
+        padding-bottom: 56.25%;
+        video {
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: none;
+        }
+    }
+}
+
+.main_visual.m {
+    margin-top: -60px;
+    img, video {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.main_visual_tit {
+    position: absolute;
+    @include rem(top, 211px);
+    left: 50%;
+    z-index: 10;
+    @include rem(margin-left, -500px);
+    font-weight: bold;
+    @include rem(font-size, 150px);
+    font-family: 'Roboto-Regular',sans-serif;
+    line-height: 1.05;
+    color: #222;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.main_sec_tit {
+    padding: 0 20px;
+    font-size: 36px;
+    line-height: 1.28;
+    color: #000;
+    .sub {
+        display: block;
+        margin-bottom: 16px;
+        font-weight: normal;
+        font-size: 20px;
+        font-family: 'Roboto-Regular',sans-serif;
+        line-height: 1.2;
+        color: #555;
+    }
+
+    @include respond-to('small') {
+        padding: 0;
+        @include rem(font-size, 56px);
+        line-height: 1.33;
+        .sub {
+            @include rem(margin-bottom, 30px);
+            @include rem(font-size, 30px);
+            line-height: 1.167;
+        }
+    }
+}
+
+.main_sec_img {
+    width: 100%;
+    margin-top: 40px;
+
+    @include respond-to('small') {
+        display: none;
+    }
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.main_sec_txt {
+    margin-top: 40px;
+    padding: 0 20px;
+    p {
+        font-size: 15px;
+        line-height: 1.53;
+        color: #666;
+        & + p {
+            margin-top: 10px;
+        }
+    }
+
+    @include respond-to('small') {
+        @include rem(margin-top, 30px);
+        padding: 0;
+        p {
+            @include rem(font-size, 18px);
+            line-height: 1.45;
+            & + p {
+                @include rem(margin-top, 10px);
+            }
+        }
+    }
+}
+
+.main_system_sec {
+    position: relative;
+    padding: 42px 0 60px;
+
+    @include respond-to('small') {
+        @include rem(height, 930px);
+        padding: 0;
+        background: url(../img/main/bg_system_sec.jpg) 50% 0 no-repeat;
+        background-size: auto 100%;
+        .main_sec_inner {
+            position: absolute;
+            @include rem(top, 316px);
+            left: $MOBILE-GAP;
+        }
+        .main_sec_tit,
+        .main_sec_txt {
+            @include rem(width, 500px);
+        }
+    }
+    @include respond-to('large') {
+        .main_sec_inner {
+            width: 1280px;
+            left: 50%;
+            margin-left: -640px;
+        }
+    }
+}
+
+.main_product_sec {
+    position: relative;
+    padding: 60px 0;
+    background: #f9f9f9;
+
+    @include respond-to('small') {
+        @include rem(height, 1135px);
+        padding: 0;
+        background: url(../img/main/bg_product_sec.jpg) 50% 0 no-repeat;
+        background-size: auto 100%;
+        .main_sec_inner {
+            position: absolute;
+            @include rem(top, 196px);
+            left: 50%;
+            @include rem(margin-left, 135px);
+        }
+        .main_sec_tit,
+        .main_sec_txt {
+            @include rem(width, 505px);
+        }
+    }
+}
+
+.main_service_sec {
+    position: relative;
+    padding: 68px 0 60px;
+    .main_sec_txt {
+        margin-top: -33px;
+    }
+
+    @include respond-to('small') {
+        @include rem(height, 1450px);
+        padding: 0;
+        background: url(../img/main/bg_service_sec.jpg) 50% 0 no-repeat;
+        background-size: auto 100%;
+        .main_sec_inner {
+            position: absolute;
+            @include rem(top, 138px);
+            left: 50%;
+            @include rem(margin-left, -500px);
+        }
+        .main_sec_txt {
+            @include rem(margin-top, 835px);
+            p {
+                line-height: 1.73;
+            }
+        }
+    }
+}

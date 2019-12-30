@@ -1,0 +1,45 @@
+@import "../sprites/sp_paging";
+
+.pagination{
+    display: none;
+    @include respond-to('medium') {
+        display: block;
+    }
+    @include rem(margin-top, 60px);
+    text-align: center;
+    button, strong{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 21px;
+        line-height: 26px;
+        margin: 0 30px;
+        font-size: 18px;
+        color: #8f8f8f;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+    .active{
+        color: #222;
+        font-weight: bold;
+    }
+    .btn_page{
+        overflow: hidden;
+        margin: 0 15px;
+        background-image: url('../img/sprites/sp_paging.png');
+        background-repeat: no-repeat;
+    }
+    .btn_page_first{
+        @include retina-sprite($sp-paging-page-first-group);
+    }
+    .btn_page_prev{
+        @include retina-sprite($sp-paging-page-prev-group);
+    }
+    .btn_page_next{
+        @include retina-sprite($sp-paging-page-next-group);
+    }
+    .btn_page_last{
+        @include retina-sprite($sp-paging-page-last-group);
+    }
+}

@@ -1,0 +1,195 @@
+.base_inp_txt {
+    display:block;
+    background:#fff;
+    input{
+        display:inline-block;
+        width:100%;
+        height:40px;
+        padding:10px 11px 10px;
+        border:1px solid #969696;
+        background:transparent;
+        @include rem(font-size, 18px);
+        color:#000;
+        vertical-align:top;
+        border-radius:0;
+        box-sizing:border-box;
+        -webkit-appearance:none
+    }
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button{margin:0}
+    input::-webkit-input-placeholder{color:#777}
+    input:disabled{opacity:.5}
+
+    @include respond-to('small') {
+        input{
+            height:50px;
+        }
+    }
+}
+
+.base_inp_grp {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+    box-sizing:border-box;
+    .base_inp_txt{
+        display:table-cell;
+        width:auto;
+        text-align:center;
+        box-sizing:border-box;
+        vertical-align:top
+    }
+    .base_space{
+        display:table-cell;
+        @include rem(width, 25.6px);
+        text-align:center;
+        vertical-align:middle;
+        color: #8f8f8f;
+    }
+}
+
+.base_inp_sel {
+    position:relative;
+    display:block;
+    height:40px;
+    select{
+      display:inline-block;
+      width:100%;
+      height:40px;
+      padding:0 27px 0 10px;
+      border:1px solid #969696;
+      background:#fff url(../img/common/codr_ico_slct2.png) 100% 50% no-repeat;
+      background-size:27px 7px;
+      @include rem(font-size, 18px);
+      color:#8f8f8f;
+      appearance:none;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      border-radius:0
+    }
+    select::-ms-expand{display:none}
+    select:disabled{opacity:.5}
+
+    @include respond-to('small') {
+        select{
+            height:50px;
+        }
+    }
+}
+
+.base_inp_txtarea{
+    overflow:hidden;
+    display:block;
+    position:relative;
+    border:1px solid #969696;
+    background:#fff;
+    textarea{
+        width:100%;
+        padding:15px 10px;
+        border:0 none;
+        box-sizing:border-box;
+        background:transparent;
+        @include rem(font-size, 18px);
+        color:#333;
+        ertical-align:top;
+        resize:none;
+        border-radius:0
+    }
+    textarea::-webkit-input-placeholder{color:#8f8f8f}
+    .textarea_cont{
+        border-top: 1px solid #e9e9e9;
+        display: block;
+        @include rem(padding, 8px 8px 6px);
+        color: #000;
+        text-align: right;
+    }
+}
+
+.base_inp_chk{
+    position:relative;
+    min-width:18px;
+    display:inline-block;
+    min-height:18px;
+    word-wrap:normal;
+    word-break:normal;
+    vertical-align:top;
+    input[type='checkbox']{
+        position:absolute;
+        display:inline-block;
+        width:18px;height:18px;
+        margin:0;padding:0;
+        border:0;
+        vertical-align:top;
+        border-radius:0;
+        appearance:none;
+        -webkit-appearance:none
+    }
+    input:after{
+        content:'';
+        display:inline-block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:16px;
+        height:16px;
+        border:1px solid #969696;
+        background:#fff
+    }
+    input:checked:after{
+        border-color:#ff5b59;
+        background:url(../img/common/codr_chk.png) -1px -1px no-repeat;background-size:18px auto
+    }
+    input + label{
+        display:inline-block;
+        padding-left:25px;
+        height: 18px;
+        line-height: 20px;
+        vertical-align:top
+    }
+    input:disabled{opacity:.5}
+    input:disabled + label{opacity:.5}
+}
+
+.base_inp_rdo{
+    position:relative;
+    min-width:20px;
+    display:inline-block;
+    min-height:20px;
+    word-wrap:normal;
+    word-break:normal;
+    vertical-align:top;
+    input[type='radio']{
+        position:absolute;
+        display:block;
+        width:20px;
+        height:20px;
+        margin:0;
+        padding:0;
+        border:0;
+        background:none;
+        vertical-align:top;
+        -webkit-appearance:none;
+        border-radius:0;
+    }
+    input:after{
+        content:'';
+        display:inline-block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:20px;
+        height:20px;
+        background: url(../img/common/sp_form.png) 50% -25px no-repeat;background-size:20px auto;
+        -webkit-background-size:20px auto
+    }
+    input:checked:after{background-position:50% -49px}
+    input + label{
+        display:inline-block;
+        height: 20px;
+        padding-left: 25px;
+        line-height: 22px;
+        vertical-align:top
+    }
+    input:disabled:after{background-position:50% 0}
+    input:disabled + label{color:#bbb}
+}

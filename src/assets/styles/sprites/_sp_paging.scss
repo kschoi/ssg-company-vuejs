@@ -1,0 +1,226 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$sp-paging-page-first-name: 'sp_paging_page_first';
+$sp-paging-page-first-x: 0px;
+$sp-paging-page-first-y: 0px;
+$sp-paging-page-first-offset-x: 0px;
+$sp-paging-page-first-offset-y: 0px;
+$sp-paging-page-first-width: 19px;
+$sp-paging-page-first-height: 19px;
+$sp-paging-page-first-total-width: 48px;
+$sp-paging-page-first-total-height: 49px;
+$sp-paging-page-first-image: '../img/sprites/sp_paging.png?v=20190220';
+$sp-paging-page-first: (0px, 0px, 0px, 0px, 19px, 19px, 48px, 49px, '../img/sprites/sp_paging.png?v=20190220', 'sp_paging_page_first', );
+$sp-paging-page-last-name: 'sp_paging_page_last';
+$sp-paging-page-last-x: 29px;
+$sp-paging-page-last-y: 0px;
+$sp-paging-page-last-offset-x: -29px;
+$sp-paging-page-last-offset-y: 0px;
+$sp-paging-page-last-width: 19px;
+$sp-paging-page-last-height: 19px;
+$sp-paging-page-last-total-width: 48px;
+$sp-paging-page-last-total-height: 49px;
+$sp-paging-page-last-image: '../img/sprites/sp_paging.png?v=20190220';
+$sp-paging-page-last: (29px, 0px, -29px, 0px, 19px, 19px, 48px, 49px, '../img/sprites/sp_paging.png?v=20190220', 'sp_paging_page_last', );
+$sp-paging-page-next-name: 'sp_paging_page_next';
+$sp-paging-page-next-x: 0px;
+$sp-paging-page-next-y: 29px;
+$sp-paging-page-next-offset-x: 0px;
+$sp-paging-page-next-offset-y: -29px;
+$sp-paging-page-next-width: 11px;
+$sp-paging-page-next-height: 20px;
+$sp-paging-page-next-total-width: 48px;
+$sp-paging-page-next-total-height: 49px;
+$sp-paging-page-next-image: '../img/sprites/sp_paging.png?v=20190220';
+$sp-paging-page-next: (0px, 29px, 0px, -29px, 11px, 20px, 48px, 49px, '../img/sprites/sp_paging.png?v=20190220', 'sp_paging_page_next', );
+$sp-paging-page-prev-name: 'sp_paging_page_prev';
+$sp-paging-page-prev-x: 21px;
+$sp-paging-page-prev-y: 29px;
+$sp-paging-page-prev-offset-x: -21px;
+$sp-paging-page-prev-offset-y: -29px;
+$sp-paging-page-prev-width: 11px;
+$sp-paging-page-prev-height: 20px;
+$sp-paging-page-prev-total-width: 48px;
+$sp-paging-page-prev-total-height: 49px;
+$sp-paging-page-prev-image: '../img/sprites/sp_paging.png?v=20190220';
+$sp-paging-page-prev: (21px, 29px, -21px, -29px, 11px, 20px, 48px, 49px, '../img/sprites/sp_paging.png?v=20190220', 'sp_paging_page_prev', );
+$sp-paging-page-first-2x-name: 'sp_paging_page_first@2x';
+$sp-paging-page-first-2x-x: 0px;
+$sp-paging-page-first-2x-y: 0px;
+$sp-paging-page-first-2x-offset-x: 0px;
+$sp-paging-page-first-2x-offset-y: 0px;
+$sp-paging-page-first-2x-width: 38px;
+$sp-paging-page-first-2x-height: 38px;
+$sp-paging-page-first-2x-total-width: 96px;
+$sp-paging-page-first-2x-total-height: 98px;
+$sp-paging-page-first-2x-image: '../img/sprites/sp_paging@2x.png?v=20190220';
+$sp-paging-page-first-2x: (0px, 0px, 0px, 0px, 38px, 38px, 96px, 98px, '../img/sprites/sp_paging@2x.png?v=20190220', 'sp_paging_page_first@2x', );
+$sp-paging-page-last-2x-name: 'sp_paging_page_last@2x';
+$sp-paging-page-last-2x-x: 58px;
+$sp-paging-page-last-2x-y: 0px;
+$sp-paging-page-last-2x-offset-x: -58px;
+$sp-paging-page-last-2x-offset-y: 0px;
+$sp-paging-page-last-2x-width: 38px;
+$sp-paging-page-last-2x-height: 38px;
+$sp-paging-page-last-2x-total-width: 96px;
+$sp-paging-page-last-2x-total-height: 98px;
+$sp-paging-page-last-2x-image: '../img/sprites/sp_paging@2x.png?v=20190220';
+$sp-paging-page-last-2x: (58px, 0px, -58px, 0px, 38px, 38px, 96px, 98px, '../img/sprites/sp_paging@2x.png?v=20190220', 'sp_paging_page_last@2x', );
+$sp-paging-page-next-2x-name: 'sp_paging_page_next@2x';
+$sp-paging-page-next-2x-x: 0px;
+$sp-paging-page-next-2x-y: 58px;
+$sp-paging-page-next-2x-offset-x: 0px;
+$sp-paging-page-next-2x-offset-y: -58px;
+$sp-paging-page-next-2x-width: 22px;
+$sp-paging-page-next-2x-height: 40px;
+$sp-paging-page-next-2x-total-width: 96px;
+$sp-paging-page-next-2x-total-height: 98px;
+$sp-paging-page-next-2x-image: '../img/sprites/sp_paging@2x.png?v=20190220';
+$sp-paging-page-next-2x: (0px, 58px, 0px, -58px, 22px, 40px, 96px, 98px, '../img/sprites/sp_paging@2x.png?v=20190220', 'sp_paging_page_next@2x', );
+$sp-paging-page-prev-2x-name: 'sp_paging_page_prev@2x';
+$sp-paging-page-prev-2x-x: 42px;
+$sp-paging-page-prev-2x-y: 58px;
+$sp-paging-page-prev-2x-offset-x: -42px;
+$sp-paging-page-prev-2x-offset-y: -58px;
+$sp-paging-page-prev-2x-width: 22px;
+$sp-paging-page-prev-2x-height: 40px;
+$sp-paging-page-prev-2x-total-width: 96px;
+$sp-paging-page-prev-2x-total-height: 98px;
+$sp-paging-page-prev-2x-image: '../img/sprites/sp_paging@2x.png?v=20190220';
+$sp-paging-page-prev-2x: (42px, 58px, -42px, -58px, 22px, 40px, 96px, 98px, '../img/sprites/sp_paging@2x.png?v=20190220', 'sp_paging_page_prev@2x', );
+$sp-paging-width: 48px;
+$sp-paging-height: 49px;
+$sp-paging-image: '../img/sprites/sp_paging.png?v=20190220';
+$sp-paging-sprites: ($sp-paging-page-first, $sp-paging-page-last, $sp-paging-page-next, $sp-paging-page-prev, );
+$sp-paging: (48px, 49px, '../img/sprites/sp_paging.png?v=20190220', $sp-paging-sprites, );
+$sp-retina-paging-width: 96px;
+$sp-retina-paging-height: 98px;
+$sp-retina-paging-image: '../img/sprites/sp_paging@2x.png?v=20190220';
+$sp-retina-paging-sprites: ($sp-paging-page-first-2x, $sp-paging-page-last-2x, $sp-paging-page-next-2x, $sp-paging-page-prev-2x, );
+$sp-retina-paging: (96px, 98px, '../img/sprites/sp_paging@2x.png?v=20190220', $sp-retina-paging-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$sp-paging-page-first-group-name: 'sp_paging_page_first';
+$sp-paging-page-first-group: ('sp_paging_page_first', $sp-paging-page-first, $sp-paging-page-first-2x, );
+$sp-paging-page-last-group-name: 'sp_paging_page_last';
+$sp-paging-page-last-group: ('sp_paging_page_last', $sp-paging-page-last, $sp-paging-page-last-2x, );
+$sp-paging-page-next-group-name: 'sp_paging_page_next';
+$sp-paging-page-next-group: ('sp_paging_page_next', $sp-paging-page-next, $sp-paging-page-next-2x, );
+$sp-paging-page-prev-group-name: 'sp_paging_page_prev';
+$sp-paging-page-prev-group: ('sp_paging_page_prev', $sp-paging-page-prev, $sp-paging-page-prev-2x, );
+$sp-retina-paging-group: ($sp-paging-page-first-group, $sp-paging-page-last-group, $sp-paging-page-next-group, $sp-paging-page-prev-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

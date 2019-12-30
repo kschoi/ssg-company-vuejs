@@ -1,0 +1,82 @@
+// =============================================================================
+// ERROR
+// =============================================================================
+.err_sec {
+    padding-top: 49px;
+    text-align: center;
+    &:before {
+        display: block;
+        width: 116px;
+        height: 104px;
+        margin: 0 auto 30px;
+        background: url(../img/common/error.svg) no-repeat;
+        background-size: cover;
+        content: '';
+    }
+
+    @include respond-to('small') {
+        @include rem(padding-top, 205px);
+        &:before {
+            @include rem(width, 144px);
+            @include rem(height, 129px);
+            @include rem(margin, 0 auto 46px);
+        }
+    }
+}
+
+.err_sec_tit {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+
+    @include respond-to('small') {
+        @include rem(font-size, 18px);
+        @include rem(line-height, 20px);
+    }
+}
+
+.err_sec_txt {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666;
+
+    @include respond-to('small') {
+        @include rem(font-size, 18px);
+        @include rem(line-height, 20px);
+    }
+}
+
+.err_btns {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    @include respond-to('small') {
+        width: 678px;
+        @include rem(padding, 130px 0 70px);
+        flex-flow: row wrap;
+    }
+}
+
+.err_btns .btn_base {
+    font-weight: bold;
+    padding: 16px 0;
+    & + .btn_base {
+        margin-top: 10px;
+    }
+
+    @include respond-to('small') {
+        flex: 1;
+        padding: 21px 0;
+        & + .btn_base {
+            margin: 0 0 0 10px;
+        }
+    }
+    .btn_txt {
+        font-size: 14px;
+    }
+}

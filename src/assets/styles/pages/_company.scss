@@ -1,0 +1,197 @@
+// =============================================================================
+// 브랜드스토리
+// =============================================================================
+
+.nav_brd{
+  @include rem(padding, 20px 0);
+  background:#fff;
+}
+
+.nav_brd ol{
+  display:table;
+  table-layout:fixed;
+  width:100%;
+  max-width:1280px;
+  margin:0 auto;
+  border-bottom:1px solid #e0e0e0;
+}
+
+.nav_brd li{
+  display:table-cell;
+}
+
+.nav_brd li a{
+  display:block;
+  position:relative;
+  @include rem(padding, 17px 0);
+  color:#8f8f8f;
+  @include rem(font-size, 20px);
+  text-align:center;
+
+  &:after{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:50%;
+    @include rem(width, 16px);
+    @include rem(height, 16px);
+    border-radius:50%;
+    background:#e0e0e0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.nav_brd li.on a{
+  color:#222;
+  font-weight:bold;
+
+  &:after{
+    background-color:#222;
+  }
+}
+
+.unit_brd{
+  @include rem(padding, 128px 0 0);
+}
+
+.unit_brd_cont{
+
+  @include respond-to('medium') {
+    position:relative;
+    padding-left:42.15%;
+  }  
+}
+
+.unit_brd_tit{
+  @include rem(margin-bottom, 40px);
+
+  @include respond-to('medium') {
+    position:absolute;
+    top:0;
+    left:0;
+  }
+}
+
+.unit_brd_tit h2{
+  font-weight: bold;
+  @include rem(font-size, 54px);
+  line-height:1.3;
+}
+
+.unit_brd_tit em{
+  display:block;
+  position:relative;
+  @include rem(margin-top, 47px);
+  @include rem(padding-bottom, 28px);
+  @include rem(font-size, 22px);
+
+  &:after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:40px;
+    height:1px;
+    background:#222;
+  }
+
+  @include respond-to('medium') {
+    &:after{
+      height:2px;
+    }
+  }
+}
+.unit_brd_detail{}
+
+.unit_brd_detail dl{}
+
+.unit_brd_detail dt{
+  font-weight: bold;
+  @include rem(font-size, 26px);
+  line-height:2;
+}
+
+.unit_brd_detail dd{
+  color:#666;
+  @include rem(font-size, 19.2px);
+  @include rem(margin-top, 12px);
+  line-height:1.55;
+}
+
+.unit_brd_detail p{
+  @include rem(margin-top, 12px);
+  &:first-child{
+    margin:0;
+  }
+}
+.unit_brd_detail p strong{
+  color:#222;
+}
+
+
+// =============================================================================
+// 성장스토리
+// =============================================================================
+
+.tx_desc{
+  color:#222;
+  @include rem(margin, 40px 0 50px);
+  @include rem(font-size, 26px);
+  line-height:1.5;
+  font-weight: bold;
+
+  & br{
+    display:none;
+  }
+
+  @include respond-to('large') {
+    & br{
+      display:block;
+    }
+  } 
+
+}
+
+.lst_history{
+  border-top:2px solid #222;
+}
+
+.lst_history li{
+  position:relative;
+  @include rem(padding, 8px 0);
+  border-bottom:1px solid #e0e0e0;
+}
+
+.lst_history h2{  
+  position:absolute;
+  left:2%;
+  color:#000;
+  @include rem(top, 18px);
+  @include rem(font-size, 22px);
+  line-height:1.8;
+}
+
+.lst_history dl{
+  @include rem(padding, 10px 0);
+  @include clearfix();
+  margin-left:23%;
+}
+
+.lst_history dt{
+  float:left;
+  width:10%;
+  min-width:30px;
+  color:#000;
+  @include rem(font-size, 19.2px);
+  line-height:1.8;
+}
+
+.lst_history dd{
+  overflow:hidden; 
+}
+
+.lst_history p{
+  color:#000;
+  @include rem(font-size, 19.2px);
+  line-height:1.8;
+}

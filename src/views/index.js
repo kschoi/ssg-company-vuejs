@@ -1,0 +1,15 @@
+export { default as MainView } from './MainView.vue';
+export { default as CompanyIntroView } from './CompanyIntroView.vue';
+export { default as CompanyHistoryView } from './CompanyHistoryView.vue';
+export { default as CompanyBrandView } from './CompanyBrandView.vue';
+export { default as BusinessView } from './BusinessView.vue';
+export { default as BusinessDetailView } from './BusinessDetailView.vue';
+export { default as ChannelNewsView } from './ChannelNewsView.vue';
+export { default as ChannelBrandView } from './ChannelBrandView.vue';
+export { default as CsrBusinessView } from './CsrBusinessView.vue';
+export { default as CsrSinmungoView } from './CsrSinmungoView.vue';
+export { default as CsrTogetherView } from './CsrTogetherView.vue';
+export { default as CsrTruthfulView } from './CsrTruthfulView.vue';
+export { default as CsrContributionView } from './CsrContributionView.vue';
+export { default as CsrReportView } from './CsrReportView.vue';
+export { default as ErrorView } from './ErrorView.vue';

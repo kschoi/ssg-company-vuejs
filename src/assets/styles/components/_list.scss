@@ -1,0 +1,40 @@
+
+.lst_gallery{
+  @include clearfix();
+  @include rem(padding-top, 20px);
+}
+
+.lst_gallery > li{
+  @include rem(margin-top, 30px);
+
+  &.wide{
+    width:100% !important;
+    float:none !important;
+    padding:0 !important;
+  }
+
+  @include respond-to('small') {
+    float:left;
+    width:50%;
+    padding:0 0 0 1.5%;
+    box-sizing:border-box;
+  } 
+
+  &:nth-child(odd) {
+    @include respond-to('small') {
+      padding:0 1.5% 0 0;
+    }
+  } 
+}
+.lst_gallery figure img,
+.lst_gallery figure video{
+  width:100%;
+  height:auto;
+  vertical-align:top;
+}
+.lst_gallery figcaption{
+  @include rem(padding, 8px);
+  @include rem(font-size, 16px);
+  color:#000;
+  text-align:center;
+}

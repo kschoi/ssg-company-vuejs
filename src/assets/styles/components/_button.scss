@@ -1,0 +1,117 @@
+.btn_more_view{
+    display: block;
+    margin-top: 30px;
+    .btn_base {
+        padding:14px 0 13px;
+    }
+    
+    @include respond-to('medium') {
+        display: none;
+    }
+}
+
+.btn_base {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #222;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0;
+    @include rem(padding, 24px 0);
+    .btn_txt {
+        @include rem(padding, 0 20px);
+        @include rem(font-size, 18px);
+        &.ico_arrow:before,
+        &.ico_arrow:after {
+            display: inline-block;
+            @include rem(width, 9px);
+            @include rem(height, 9px);
+            border: 1px solid #222;
+            box-sizing: border-box
+        }
+        &.ico_left:before {
+            content: '';
+            margin-right: 6px;
+            border-width: 1px 0 0 1px;
+            vertical-align: 2px;
+            transform: rotate(-45deg);
+        }
+        &.ico_right:after {
+            content: '';
+            margin-left: 6px;
+            border-width: 0 1px 1px 0;
+            vertical-align: 0;
+            transform: rotate(-45deg);
+        }
+        &.ico_down:after {
+            content: '';
+            margin-left: 6px;
+            border-width: 0 1px 1px 0;
+            vertical-align: 3px;
+            transform: rotate(45deg);
+        }
+    }
+    &.btn_sm {
+        @include rem(padding, 8px 0 6px);
+        .btn_txt {
+            @include rem(font-size, 16px);
+        }
+    }
+    &.btn_full {
+        width: 100%;
+    }
+    &.radius{
+        border-radius: 100px;
+    }
+    &.black {
+        color: #fff;
+        background: #222;
+        .ico_arrow:before,
+        .ico_arrow:after {
+            border-color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin coloring($color) {
+    background: lighten($color, 20%);
+    border: 1px solid lighten($color, 10%);
+    color: $color;
+  }
+
+  %coloring-red {
+    @include coloring(red);
+  }
+
+  %coloring-green {
+    @include coloring(green);
+  }
+
+  .message--danger {
+    @extend %coloring-red;
+  }
+
+  .pricing-table__cell--chip {
+    @extend %coloring-green;
+  }
+
+  .pricing-table__cell--expensive {
+    @extend %coloring-red;
+  }
